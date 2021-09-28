@@ -1,0 +1,67 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.entrada{
+    background-image: url(../img/fire.jpg);
+    background-position: center;
+    background-size:cover;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: whitesmoke;
+    color: white;
+    border-radius: 12px;
+}
+.nombreEntrada{
+    text-decoration: underline;
+}
+.compra{
+    display: flex;
+    flex-flow: column nowrap;
+}
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+  
+.btnCompra{
+    margin-top: 5px;
+    background-color: whitesmoke; 
+    color: black;
+    text-align: center;
+    height: 50px;
+    display: inline-block;
+    font-family: cambria;
+    font-weight: bolder;
+    border-radius: 12px;
+    padding: 10px;
+}
+.btnCompra:hover{
+    background-color: gray; 
+}
+
+
+@media screen and (max-width: 650px) {
+    .content{   
+        margin-top: 150px;
+
+
+    }
+    .entrada{
+    display: flex;
+    flex-flow: column;
+}
+}

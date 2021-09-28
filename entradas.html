@@ -1,0 +1,106 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.jpg">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/entradas.css">
+    <script src="https://kit.fontawesome.com/c4fc8a3024.js" crossorigin="anonymous"></script>
+
+    <title>Buried fest</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="title">
+            <h1><a href="index.html">BURIED FEST</a></h1>
+        </div>
+        <div class="options">
+            <li><a href="entradas.html">ENTRADAS</a></li>
+            <li><a href="index.html">INFO</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="fechas">
+            <span>ENTRADAS 2022</span>
+        </div>
+        <div class="wrapper">
+            <div class="entrada">
+                <h3 class="nombreEntrada">WARM UP TICKET</h3>
+                <div class="dispon">
+                    <h5>Total entradas: 600</h5>
+                    <h5>Entradas disponibles: 452</h5>
+                </div>
+                <h3>39,00€</h3>
+                <div class="compra">
+                    <div class="number-input">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                            class="minus">-</button>
+                        <input id="numEntradas" class="quantity" min="1" name="quantity" value="1" type="number">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                            class="plus">+</button>
+                    </div>
+                    <button class="btnCompra" onclick="comprar(document.getElementById('numEntradas'),0)"> COMPRAR</button>
+                </div>
+            </div>
+            <div class="entrada">
+                <h3 class="nombreEntrada">4 DAY TICKET</h3>
+                <div class="dispon">
+                    <h5>Total entradas: 500</h5>
+                    <h5>Entradas disponibles: 159</h5>
+                </div>
+                <h3>119,00€</h3>
+
+                <div class="compra">
+                    <div class="number-input">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                            class="minus">-</button>
+                        <input id="numEntradas2" class="quantity" min="1" name="quantity" onkeydown="return false" value="1" type="number">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                            class="plus">+</button>
+                    </div>
+                    <button class="btnCompra" onclick="comprar(document.getElementById('numEntradas2'),1)"> COMPRAR</button>
+                </div>
+            </div>
+            <div class="entrada">
+                <h3 class="nombreEntrada">5 DAY TICKET</h3>
+                <div class="dispon">
+                    <h5>Total entradas: 400</h5>
+                    <h5>Entradas disponibles: 321</h5>
+                </div>
+                <h3>199,00€</h3>
+                <div class="compra">
+                    <div class="number-input">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                            class="minus">-</button>
+                        <input id="numEntradas3" class="quantity" min="1" name="quantity" value="1" type="number">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                            class="plus">+</button>
+                    </div>
+                    <button class="btnCompra" onclick="comprar(document.getElementById('numEntradas3'),2)"> COMPRAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://www.facebook.com/resurrectionfest/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com/ResurrectionESP" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+        <a href="https://www.youtube.com/user/ResurrectionFestTV?sub_confirmation=1" target="_blank"><i
+                class="fa fa-youtube fa-2x"></i></a>
+        <a href="http://instagram.com/resurrectionfest" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+        <a href="mailto:contact@resurrectionfest.es?subject=[Contact Website]" target="_blank"><i
+                class="fa fa-envelope fa-2x"></i> </a>
+        <a href="https://open.spotify.com/user/resurrection_fest" target="_blank"><i
+                class="fa fa-spotify fa-2x"></i></a>
+    </footer>
+    <script src="js/entradas.js"></script>
+</body>
+
+</html>
